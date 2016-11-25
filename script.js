@@ -1,5 +1,8 @@
 $(document).ready(function () {
-    $('div').click(function () {
-    
+    $('.aboutme').mouseenter(function () {
+        $(this).addClass('grow');
+    });
+      $('.aboutme').mouseleave(function () {
+        $(this).removeClass('grow');
     });
 });

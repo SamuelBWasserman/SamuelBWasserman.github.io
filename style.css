@@ -8,7 +8,7 @@ body
 .bg-1 
 { 
     color: #ffffff;
-    margin-top: 70px;
+    margin-top: 60px;
 }
 .bg-1 h1
 {
@@ -52,4 +52,8 @@ body
 .bg-4
 {
     margin-top:45px;
+}
+.grow
+{
+   font-size: 40px;
 }
