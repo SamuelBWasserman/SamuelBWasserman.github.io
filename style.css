@@ -8,7 +8,13 @@ body
 .bg-1 
 { 
     color: #ffffff;
-    margin-top: 80px;
+    margin-top: 70px;
+}
+.bg-1 h1
+{
+    font:36px;
+    font-family:fantasy;
+    color:aquamarine;
 }
 .margin 
 {
