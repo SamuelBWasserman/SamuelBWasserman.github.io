@@ -8,7 +8,7 @@ body
 .bg-1 
 { 
     color: #ffffff;
-    margin-top:45px;
+    margin-top: 50px;
 }
 .margin 
 {
@@ -16,9 +16,7 @@ body
 }
 .margin2
 {
-    margin-top:45px;
-    padding:20px;
-    padding-top: 70px;
+    padding-top:70px;
 }
 .navbar 
 {
