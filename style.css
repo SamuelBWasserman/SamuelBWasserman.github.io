@@ -12,7 +12,7 @@ body
 }
 .bg-1 h1
 {
-    font:36px;
+    font-size: 50px;
     font-family:fantasy;
     color:aquamarine;
 }
@@ -32,10 +32,22 @@ body
       background-color: #474e5d; /* Dark Blue */
       color: #ffffff;
   }
+.bg-2 h3
+{
+    font-size:40px;
+}
 .bg-3 a
 {
     text-decoration: none;
     color:white;
+}
+.bg-3 h3
+{
+    font-size: 40px;
+}
+.bg-3 p
+{
+    font-size:30px;
 }
 .bg-4
 {
