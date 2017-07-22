@@ -1,168 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
 
-    <title>Samuel Wasserman</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico?how' />
-    <link rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com
-    /bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat"rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <style>
-        body {
-            font: 20px Montserrat, sans-serif;
-            line-height: 1.8;
-            color: #f5f6f7;
-        }
-
-        p {
-            font-size: 16px;
-        }
-
-        .margin {
-            margin-bottom: 45px;
-        }
-
-        .bg-1 {
-            background-image: url("http://wallpapercave.com/wp/NcDdW2X.jpg");
-            /* Black */
-            color: #ffffff;
-        }
-
-        .bg-2 {
-            background-color: #474e5d;
-            /* Dark Blue */
-            color: #ffffff;
-        }
-
-        .bg-3 {
-            background-color: #ffffff;
-            /* White */
-            color: #555555;
-        }
-
-        .bg-4 {
-            background-color: #2f2f2f;
-            /* Black Gray */
-            color: #fff;
-        }
-
-        .container-fluid {
-            padding-top: 70px;
-            padding-bottom: 70px;
-        }
-
-        .navbar {
-            border: 0;
-            border-radius: 0;
-            margin-bottom: 0;
-            font-size: 12px;
-            letter-spacing: 5px;
-        }
-
-        .navbar-nav li a:hover {
-            color: #1abc9c !important;
-        }
-
-        #contact ul {
-            list-style: none;
-            text-align: center;
-        }
-
-        #contact li {
-            display: inline;
-            padding: 25px;
-        }
-    </style>
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+  </style>
 </head>
-
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-
-        <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Me</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-
-    </nav>
-
-    <!-- First Container -->
-    <div class="container-fluid bg-1 text-center">
-        <h1 class="margin">Samuel Wasserman</h1>
-        <img src="https://lh3.googleusercontent.com/_UEzDh5AqLZaRDppJn0svpu0G-xICq9DGT5dVHanJITNkN3sWgPPgBdG1q05-723jol9R4C56J-2PSpQw3vX-GDGH_4wGeDJkH9gkvpeSyxxWfauloa3_6yHudhnjhNJJbb-XeuGcxm7ldyZk0cCvNKALB0XsOFrNZ_d5kcCF6sEqAbSI9kIKZwef77Qy2cqECNFkZtRGdyFkChmdtSNryp4_UIf3_FCnv8rvOwNCAYB_DVnU9_i1hZcT1NY5Lb_z0R3nEUebGTtaIUI1sz9xkzLMZ7upme4MpaIQjoYTi3vCnWtnruNcU4hsuieoPRc9Tn7dtktGHqWWK2nZNMaYMow0TBZqtmsQrRIVTsJ5aQdZvkL8kporpHYD0Q3CmyMUpttrnd0YBB0-lmz6oYkQqMbgLpVovV8_6I6wMAnG4cm_SELDTUgNoupF9yBp2FiaVoy2noDGk64qQIsd1PtyQtLf1I-TYTFOwJV7XAnSXa_qt9oLEwzL_SudZyZk4Ud5thBVwjmQYA_4gny-UdsxJ-nFjPC7LJmupiYjw8nbrpqANYbg0jEPKnrFYcH_JGCUgTUy8GRy8Xo0GZGCU4U6SUMTTi4K-j5_0DTq0gyE-gFT4v-Tz05vgPx=w672-h901-no"
-             class="img-circle" alt="Me" width="600" height="550">
-            <h3>Software Engineer</h3>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Portfolio</a>
     </div>
-
-    <!-- Second Container -->
-    <div id="about" class="container-fluid bg-2 text-center">
-        <h2 class="margin"><center>About Me</center></h2>
-
-        <p> I am an aspiring programmer with experience in web a mobile developement. </p>
-        <p align>
-            <b>Google Intern</b>
-            <br> Worked on Firebase
-        </p>
-        <p align>
-            <b>Rutgers School of Arts and Sciences class of 2019</b>
-            <br> Computer Science / Mathematics
-        </p>
-        <p align>
-            <b>Undergraduate Student Alliance of Computer  Scienctists (USACS)</b>
-            <br> Mentor
-        </p>
-
-
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
     </div>
+  </div>
+</nav>
 
-    <!-- Third Container (Grid) -->
-    <div class="container-fluid bg-3 text-center">
-        <h3 id="projects" class="margin">Projects</h3><br>
-        <div class="row">
-            <div class="col-sm-4">
-                <p><b>Bodybuilding 101</b>:<br> Google play store published Android app that offers workout and nutrition advice. Developed by me alone.</p>
-                <center><img src="https://lh3.googleusercontent.com/QeIWe0F6HwsnsC_v_QTXuJpsYccCIlTdAfkFHTGD_tZ4c_Ijq_P-LKguBi6liwvFGxI=w300-rw" class="img-responsive margin" style="width:50%" alt="Image"></center>
-            </div>
-            <div class="col-sm-4">
-                <p><b>Veritas</b>:<br>Chrome extension that fights fake news by verifying articles and links. Developed the front end and UI.</p>
-                <center><img src="http://etc.usf.edu/presentations/extras/letters/fridge_magnets/blue/32/v-300.png" class="img-responsive margin" style="width:50%" alt="Image"></center>
-            </div>
-            <div class="col-sm-4">
-                <p>TBD</p>
-                <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-            </div>
-        </div>
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1>Sam Wasserman</h1>
+    <p>I am an aspiring Software Engineer in my 3rd year studying Computer Science and Math at Rutgers University.</p>
+  </div>
+</div>
+
+<div class="container-fluid bg-3 text-center">
+  <h3>Personal Projects</h3><br>
+  <div class="row">
+    <div class="col-sm-3">
+      <p>Veritas</p>
+      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
     </div>
+    <div class="col-sm-3">
+      <p>Bodybuilding 101</p>
+      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3">
+      <p>Amazon Alexa Health Assistant</p>
+      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3">
+      <p>Other Project</p>
+      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+  </div>
+</div><br>
 
-    <!-- Footer -->
-    <footer id="contact" class="container-fluid bg-4 text-center">
-        <h2><b><center>Contact Me</center></b></h2>
-        <p>
-            <center>Feel free to reach out for any reason.</center>
-        </p>
-        <ul>
-            <li>
-                <a href="https://www.linkedin.com/in/samuel-wasserman-0141a1128" target="_blank">
-                    <img src="http://www.hdicon.com/wp-content/uploads/2011/08/linked_in_icon-100x100.png" </img>
-                </a>
-            </li>
-            <li>
-                <a href="mailto:sambwasserman@gmail.com"><img src="https://cdn4.iconfinder.com/data/icons/ios7-active-2/100/Open_mail.png" </img></a>
-            </li>
-            <li>
-                <a href="https://github.com/SamuelBWasserman" target="_blank"><img src="http://www.dkroyer.com/img/github-icon.png" </img></a>
-            </li>
-    </footer>
+
+<footer class="container-fluid text-center">
+  <p>Contact Me</p>
+</footer>
 
 </body>
-
 </html>
